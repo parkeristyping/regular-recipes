@@ -1,9 +1,5 @@
 baseURL = 'https://regularrecipes.com/'
 title = 'Regular Recipes'
-theme = "etch"
-enableInlineShortcodes = true
-pygmentsCodeFences = true
-pygmentsUseClasses = true
 languageCode = 'en-us'
 
 [params]
@@ -27,11 +23,4 @@ languageCode = 'en-us'
     weight = 20
 
 [permalinks]
-  posts = "/:title/"
-
-[markup.goldmark.renderer]
-  # Allow HTML in Markdown
-  unsafe = true
-
-  [markup.tableOfContents]
-    ordered = true
+  recipes = "/:title/"
