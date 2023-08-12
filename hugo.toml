@@ -1,0 +1,37 @@
+baseURL = 'https://regularrecipes.com/'
+title = 'Regular Recipes'
+theme = "etch"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+languageCode = 'en-us'
+
+[params]
+  description = "A site with regular recipes"
+  dark = "auto"
+  highlight = true
+
+[menu]
+  [[menu.main]]
+    identifier = "recipes"
+    name = "recipes"
+    title = "recipes"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    title = "about"
+    url = "/about/"
+    weight = 20
+
+[permalinks]
+  posts = "/:title/"
+
+[markup.goldmark.renderer]
+  # Allow HTML in Markdown
+  unsafe = true
+
+  [markup.tableOfContents]
+    ordered = true
